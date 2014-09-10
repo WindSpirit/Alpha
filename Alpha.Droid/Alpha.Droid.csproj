@@ -66,6 +66,9 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -93,18 +96,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\ActivityStorageBag.cs" />
     <Compile Include="Adapters\MvxViewPagerFragmentAdapter.cs" />
     <Compile Include="Compatibility\MvxActionBarActivity.cs" />
     <Compile Include="Compatibility\MvxActionBarEventSourceActivity.cs" />
+    <Compile Include="Contracts\ICustomPresenter.cs" />
+    <Compile Include="Contracts\IFragmentHost.cs" />
+    <Compile Include="Contracts\MainActivityBag.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Fragments\ThirdFrag.cs" />
     <Compile Include="Fragments\TabFragment1.cs" />
     <Compile Include="Fragments\TabFragment2.cs" />
+    <Compile Include="Fragments\SecondFrag.cs" />
+    <Compile Include="Fragments\FirstFrag.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Activities\SplashScreenActivity.cs" />
+    <Compile Include="Specifics\AlphaCustomPresenter.cs" />
     <Compile Include="Specifics\TabListenerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +127,15 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\TabFrag2.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FirstFrag.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SecondFrag.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ThirdFrag.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

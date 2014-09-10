@@ -1,6 +1,6 @@
 
 
-// This unit is not referenced
+// This unit is not currently referenced... see also
 // http://blog.ostebaronen.dk/2013/07/fragments-and-viewpager-with-mvx.html
 
 

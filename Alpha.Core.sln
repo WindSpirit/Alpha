@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Core", "Alpha.Core\Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Droid", "Alpha.Droid\Alpha.Droid.csproj", "{2430FCFA-8475-4516-9DCD-45715A35F4CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alpha.Core.Test", "Alpha.Core.Test\Alpha.Core.Test.csproj", "{A441A5D4-7747-4FC3-9820-106673137888}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,10 +23,6 @@ Global
 		{2430FCFA-8475-4516-9DCD-45715A35F4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2430FCFA-8475-4516-9DCD-45715A35F4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2430FCFA-8475-4516-9DCD-45715A35F4CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{A441A5D4-7747-4FC3-9820-106673137888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A441A5D4-7747-4FC3-9820-106673137888}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A441A5D4-7747-4FC3-9820-106673137888}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A441A5D4-7747-4FC3-9820-106673137888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

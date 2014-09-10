@@ -9,4 +9,30 @@
         android:layout_height="wrap_content"
         android:textSize="40dp"
         local:MvxBind="Text Hello" />
+<!--
+    <fragment
+        class="Alpha.Droid.Fragments.TheFrag"
+        android:id="@+id/theFrag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+	-->
+    <FrameLayout
+        android:id="@+id/theFrag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load First Fragment"
+        local:MvxBind="Click OnLoadFirstFrag" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Second Fragment"
+        local:MvxBind="Click OnLoadSecondFrag" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Third Fragment"
+        local:MvxBind="Click OnLoadThirdFrag" />
 </LinearLayout>
