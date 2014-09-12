@@ -1,11 +1,8 @@
 ﻿
 
-using Cirrious.MvvmCross.ViewModels;
-
-
 namespace Alpha.Core.ViewModels
 {
-	public class ThirdFragViewModel : MvxViewModel
+	public class ThirdFragViewModel : AbstractViewModel
 	{
 		private string _dataFromThirdFrag = "Third Fragment!";
 		public string DataFromThirdFragment {

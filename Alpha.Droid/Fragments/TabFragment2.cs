@@ -37,7 +37,7 @@ namespace Alpha.Droid.Fragments
 			// All the king's horses and all the king's men
 			// Couldn't put Humpty together again.
 
-			// We MUST RetainInstance!  Otherwise, we won't be able to rehydrate out view!
+			// We MUST RetainInstance!  Otherwise, we won't be able to rehydrate our view!
 			RetainInstance = true;
 
 			// We MUST establish Arguments, if we want to use it for tombstoning!

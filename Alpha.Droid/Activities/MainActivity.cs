@@ -4,8 +4,6 @@
 // http://slodge.blogspot.co.uk/2013/06/n26-fragments-n1-days-of-mvvmcross.html
 
 
-using System;
-using System.IO;
 using System.Linq;
 using Alpha.Droid.Contracts;
 using Android.App;
@@ -25,7 +23,12 @@ using Newtonsoft.Json;
 namespace Alpha.Droid.Activities
 {
 	// Inheritance from MvxActionBarActivity is the key to implementing an ActionBar...
-	[Activity(Theme = "@style/Theme.AppCompat.Light", Label = "My Alpha Droid", Icon = "@drawable/icon")]
+	[Activity(
+		Label = "My Alpha Droid",
+		Theme = "@style/Theme.AppCompat.Light",
+		Icon = "@drawable/icon" ,
+		MainLauncher = true
+	)]
 	public class MainActivity : MvxActionBarActivity
 	{
 		// We use these fragment references for tab navigation, so we know what to show & hide

@@ -12,7 +12,9 @@ namespace Alpha.Core
         public override void Initialize()
         {
             CreatableTypes().EndingWith("Service").AsInterfaces().RegisterAsLazySingleton();
-			RegisterAppStart<MainViewModel>( );
+
+			/* RegisterAppStart<MainViewModel>( ); */
+			RegisterAppStart<FragmentStatePagerViewModel>();
         }
     }
 }

@@ -913,8 +913,8 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050037
 			public const int activity_chooser_view_content = 2131034167;
 			
-			// aapt resource value: 0x7f050052
-			public const int add_list_item = 2131034194;
+			// aapt resource value: 0x7f050058
+			public const int add_list_item = 2131034200;
 			
 			// aapt resource value: 0x7f050002
 			public const int alignBounds = 2131034114;
@@ -961,8 +961,8 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f05001a
 			public const int disableHome = 2131034138;
 			
-			// aapt resource value: 0x7f05004e
-			public const int drawer_layout = 2131034190;
+			// aapt resource value: 0x7f050054
+			public const int drawer_layout = 2131034196;
 			
 			// aapt resource value: 0x7f050021
 			public const int dropdown = 2131034145;
@@ -973,8 +973,8 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050011
 			public const int end = 2131034129;
 			
-			// aapt resource value: 0x7f050053
-			public const int exit = 2131034195;
+			// aapt resource value: 0x7f050059
+			public const int exit = 2131034201;
 			
 			// aapt resource value: 0x7f050038
 			public const int expand_activities_button = 2131034168;
@@ -992,7 +992,10 @@ namespace Alpha.Droid
 			public const int fill_vertical = 2131034121;
 			
 			// aapt resource value: 0x7f05004f
-			public const int fragment_container = 2131034191;
+			public const int first = 2131034191;
+			
+			// aapt resource value: 0x7f050055
+			public const int fragment_container = 2131034197;
 			
 			// aapt resource value: 0x7f050025
 			public const int home = 2131034149;
@@ -1012,6 +1015,12 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050039
 			public const int image = 2131034169;
 			
+			// aapt resource value: 0x7f050053
+			public const int imageView1 = 2131034195;
+			
+			// aapt resource value: 0x7f050050
+			public const int last = 2131034192;
+			
 			// aapt resource value: 0x7f050006
 			public const int left = 2131034118;
 			
@@ -1020,6 +1029,9 @@ namespace Alpha.Droid
 			
 			// aapt resource value: 0x7f05003b
 			public const int list_item = 2131034171;
+			
+			// aapt resource value: 0x7f050052
+			public const int list_view = 2131034194;
 			
 			// aapt resource value: 0x7f050024
 			public const int middle = 2131034148;
@@ -1033,6 +1045,9 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050012
 			public const int normal = 2131034130;
 			
+			// aapt resource value: 0x7f05004e
+			public const int pager = 2131034190;
+			
 			// aapt resource value: 0x7f050029
 			public const int progress_circular = 2131034153;
 			
@@ -1045,8 +1060,8 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050007
 			public const int right = 2131034119;
 			
-			// aapt resource value: 0x7f050051
-			public const int search = 2131034193;
+			// aapt resource value: 0x7f050057
+			public const int search = 2131034199;
 			
 			// aapt resource value: 0x7f050044
 			public const int search_badge = 2131034180;
@@ -1102,8 +1117,11 @@ namespace Alpha.Droid
 			// aapt resource value: 0x7f050014
 			public const int tabMode = 2131034132;
 			
-			// aapt resource value: 0x7f050050
-			public const int theFrag = 2131034192;
+			// aapt resource value: 0x7f050051
+			public const int text = 2131034193;
+			
+			// aapt resource value: 0x7f050056
+			public const int theFrag = 2131034198;
 			
 			// aapt resource value: 0x7f05003d
 			public const int title = 2131034173;
@@ -1231,25 +1249,37 @@ namespace Alpha.Droid
 			public const int FirstFrag = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int Main = 2130903065;
+			public const int fragment_pager = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int SecondFrag = 2130903066;
+			public const int fragment_pager_list = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int SplashScreen = 2130903067;
+			public const int fragment_pager_list_item = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int support_simple_spinner_dropdown_item = 2130903068;
+			public const int image_fragment = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int TabFrag1 = 2130903069;
+			public const int Main = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int TabFrag2 = 2130903070;
+			public const int SecondFrag = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int ThirdFrag = 2130903071;
+			public const int SplashScreen = 2130903071;
+			
+			// aapt resource value: 0x7f030020
+			public const int support_simple_spinner_dropdown_item = 2130903072;
+			
+			// aapt resource value: 0x7f030021
+			public const int TabFrag1 = 2130903073;
+			
+			// aapt resource value: 0x7f030022
+			public const int TabFrag2 = 2130903074;
+			
+			// aapt resource value: 0x7f030023
+			public const int ThirdFrag = 2130903075;
 			
 			static Layout()
 			{

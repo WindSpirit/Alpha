@@ -1,11 +1,8 @@
 ﻿
 
-using Cirrious.MvvmCross.ViewModels;
-
-
 namespace Alpha.Core.ViewModels
 {
-	public class FirstFragViewModel : MvxViewModel
+	public class FirstFragViewModel : AbstractViewModel
 	{
 		private string _bigHello = "First Fragment!";
 		public string TheBigHello {

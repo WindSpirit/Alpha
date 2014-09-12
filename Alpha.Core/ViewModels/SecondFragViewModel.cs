@@ -1,11 +1,8 @@
 ﻿
 
-using Cirrious.MvvmCross.ViewModels;
-
-
 namespace Alpha.Core.ViewModels
 {
-	public class SecondFragViewModel : MvxViewModel
+	public class SecondFragViewModel : AbstractViewModel
 	{
 		private string _myTextData = "Second Fragment!";
 		public string MyTextData {

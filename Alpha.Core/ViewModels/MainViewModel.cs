@@ -1,11 +1,8 @@
 
 
-using Cirrious.MvvmCross.ViewModels;
-
-
 namespace Alpha.Core.ViewModels
 {
-    public class MainViewModel : MvxViewModel
+	public class MainViewModel : AbstractViewModel
     {
 		// ViewModels need to maintain references to their child fragments
 		// for the ActionBar Tabs

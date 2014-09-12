@@ -97,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\ActivityStorageBag.cs" />
+    <Compile Include="Activities\FragmentStatePagerActivity.cs" />
     <Compile Include="Adapters\MvxViewPagerFragmentAdapter.cs" />
     <Compile Include="Compatibility\MvxActionBarActivity.cs" />
     <Compile Include="Compatibility\MvxActionBarEventSourceActivity.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Contracts\IFragmentHost.cs" />
     <Compile Include="Contracts\MainActivityBag.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Fragments\ImageFragment.cs" />
     <Compile Include="Fragments\ThirdFrag.cs" />
     <Compile Include="Fragments\TabFragment1.cs" />
     <Compile Include="Fragments\TabFragment2.cs" />
@@ -116,6 +118,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Activities\SplashScreenActivity.cs" />
     <Compile Include="Specifics\AlphaCustomPresenter.cs" />
+    <Compile Include="Fragments\ArrayListFragment.cs" />
     <Compile Include="Specifics\TabListenerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +139,18 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ThirdFrag.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pager.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\image_fragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pager_list.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pager_list_item.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
