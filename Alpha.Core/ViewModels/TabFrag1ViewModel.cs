@@ -16,7 +16,6 @@ namespace Alpha.Core.ViewModels
 		public IMvxCommand OnGotoPager { get; private set; }
 		private void GotoPager ( ) { ShowViewModel<FragmentStatePagerViewModel> ( ); }
 
-
 		private string _hello = "Tab (fragment) one.";
 		public string Hello {
 			get { return _hello; }

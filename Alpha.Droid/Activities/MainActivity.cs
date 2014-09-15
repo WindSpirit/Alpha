@@ -61,6 +61,8 @@ namespace Alpha.Droid.Activities
 			}
 			else
 			{
+				// Activity is tranistioning states...
+
 				// The FragmentManager is not going to forget about the tabs added to the ActionBar.
 				// So we must reassociate the fragments being managed by the FragmentManager, to
 				// the ActionBar tabs that we need to recreate.
@@ -82,9 +84,13 @@ namespace Alpha.Droid.Activities
 		{
 			base.OnRetainCustomNonConfigurationInstance ( );
 			
-			// This is going to persist in memory (as a Java.Lang.Object)
+			// We did not need need a surogate class to persist the data, however,
+			// we usually want to persist complex data structures rather than a simple integer.
+			// This is a good example of persisting any arbitrary data.
 			var storageBag = new MainActivityBag() { ActiveTab = SupportActionBar.SelectedTab.Position };
 			var json = JsonConvert.SerializeObject ( storageBag );
+
+			// Data returned from this method must be as a Java.Lang.Object
 			return new ActivityStorageBag ( json );
 		}
 

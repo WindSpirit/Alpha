@@ -74,11 +74,7 @@ namespace Alpha.Droid.Fragments
 			// Decide fragment to create based on view-model type (hash-code)
 			Fragment fragmentView;
 			CurrentFragment = request.ViewModelType.GetHashCode ( );
-			if ( FirstFragment.Equals ( CurrentFragment ) )
-			{
-				fragmentView = new FirstFrag ( ) { ViewModel = Mvx.Resolve<IMvxViewModelLoader> ( ).LoadViewModel ( request, null ) };
-			}
-			else if ( SecondFragment.Equals ( CurrentFragment ) )
+			if ( SecondFragment.Equals ( CurrentFragment ) )
 			{
 				fragmentView = new SecondFrag ( ) { ViewModel = Mvx.Resolve<IMvxViewModelLoader> ( ).LoadViewModel ( request, null ) };
 			}
@@ -102,10 +98,19 @@ namespace Alpha.Droid.Fragments
 
 		private MvxViewModelRequest GetViewModelRequestByHashCode(int hashCode)
 		{
-			if (hashCode.Equals(FirstFragment)) return new MvxViewModelRequest() {ViewModelType = typeof (FirstFragViewModel)};
+			// Select appropriate fragment based on hash-code value provide
 			if (hashCode.Equals(SecondFragment)) return new MvxViewModelRequest() {ViewModelType = typeof (SecondFragViewModel)};
 			if (hashCode.Equals(ThirdFragment)) return new MvxViewModelRequest() {ViewModelType = typeof(ThirdFragViewModel)};
-			return new MvxViewModelRequest() {ViewModelType = typeof (FirstFragViewModel)};
+
+			// Defaulting to first fragment if the appropriate fragment is not found above.
+			// We will pass parameters into our first fragment.
+			var test = new MvxBundle ( );
+			test.Data.Add ( "one", "first parameter" );
+			test.Data.Add ( "two", "2" );
+			return new MvxViewModelRequest ( ) {
+				ViewModelType = typeof ( FirstFragViewModel ),
+				ParameterValues = test.Data
+			};
 		}
 
 	}
