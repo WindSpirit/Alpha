@@ -40,6 +40,9 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Cirrious.CrossCore">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.1.1\lib\MonoAndroid\Cirrious.CrossCore.dll</HintPath>
     </Reference>
@@ -103,9 +106,12 @@
     <Compile Include="Compatibility\MvxActionBarEventSourceActivity.cs" />
     <Compile Include="Contracts\ICustomPresenter.cs" />
     <Compile Include="Contracts\IFragmentHost.cs" />
+    <Compile Include="Contracts\Impl\HttpFileDownloader.cs" />
     <Compile Include="Contracts\MainActivityBag.cs" />
+    <Compile Include="Controls\EllipsizingTextView.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="Fragments\ImageFragment.cs" />
+    <Compile Include="Fragments\TabFragment1ContextMenu.cs" />
     <Compile Include="Fragments\ThirdFrag.cs" />
     <Compile Include="Fragments\TabFragment1.cs" />
     <Compile Include="Fragments\TabFragment2.cs" />
@@ -113,6 +119,7 @@
     <Compile Include="Fragments\FirstFrag.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Modules\HtmlScrapingModule.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setup.cs" />
@@ -153,6 +160,9 @@
     <AndroidResource Include="Resources\layout\fragment_pager_list_item.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_context_menu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -176,6 +186,10 @@
     <ProjectReference Include="..\Alpha.Core\Alpha.Core.csproj">
       <Project>{3de9efaf-e3c9-4822-aced-4360a57c82d5}</Project>
       <Name>Alpha.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Autofac\AutofacMvvm.csproj">
+      <Project>{ff27cc88-81a7-4b67-b9c6-cb381fc336a9}</Project>
+      <Name>AutofacMvvm</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

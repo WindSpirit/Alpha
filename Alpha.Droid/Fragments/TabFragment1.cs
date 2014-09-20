@@ -20,6 +20,8 @@ using Android.Views;
 using Cirrious.MvvmCross.Binding.Droid.BindingContext;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 
+using Alpha.Core.ViewModels;
+
 
 namespace Alpha.Droid.Fragments
 {
@@ -31,6 +33,9 @@ namespace Alpha.Droid.Fragments
 
 			// Fragment Menu Support: Indicate fragment updates the option menu On Create
 			HasOptionsMenu = true;
+
+			var content = new TabFragment1ContextMenu();
+			FragmentManager.BeginTransaction ( ).Add ( /* Android.Resource.Id.Content */ Resource.Id.tab1ContextMenu, content ).Commit ( );
 		}
 
 		public override Android.Views.View OnCreateView ( Android.Views.LayoutInflater inflater, Android.Views.ViewGroup container, Bundle savedInstanceState )

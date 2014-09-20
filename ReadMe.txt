@@ -66,3 +66,21 @@ Fragment / View Parameter Passing
 	Alpha.Core / ViewModels / TabFrag2ViewModel.cs
 	Alpha.Core / ViewModels / FirstFragViewModel.cs
 		
+
+Autofac: IoC / DI (Inversion-of-Control / Dependency-Injections)
+
+	- Don't Repeat Yourself (DRY)
+	- Seperations Of Concerns (SOC)
+
+	AutofacMvvm (Portable) Project
+
+	Alpha.Core / Constituents / HtmlTitleRetriever.cs
+	Alpha.Core / Contracts / IFileDownloader.cs
+	Alpha.Core / Contracts / ITitleScraper.cs
+
+	Alpha.Core / ViewModels / TabFrag1ViewModel.cs
+
+	Alpha.Droid / Contracts / IFileDownloader.cs
+	Alpha.Droid / Contracts / ITitleScraper.cs
+
+	Alpha.Droid / Setup.cs

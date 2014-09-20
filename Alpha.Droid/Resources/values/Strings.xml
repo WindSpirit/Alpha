@@ -2,4 +2,8 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Alpha.Droid</string>
+	
+	<string name="fragment_context_menu_msg">Fragment populating a context menu; long press the button to see.</string>
+	<string name="long_press">Long press me</string>
 </resources>
+
