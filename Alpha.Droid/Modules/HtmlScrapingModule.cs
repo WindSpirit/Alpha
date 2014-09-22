@@ -1,5 +1,6 @@
 
 
+using Alpha.Droid.Fragments;
 using Autofac;
 
 using Alpha.Core.Constituents;
@@ -25,6 +26,15 @@ namespace Alpha.Droid.Modules
 			// Components (Constituent - Services), that rely on Dependency Injection, need to be a 
 			// registered type, even though they do not rely on Interface Resolution.
 			builder.RegisterType<HtmlTitleRetriever> ( ).PropertiesAutowired ( );
+
+			builder.RegisterType<ArrayListFragment> ( );
+			builder.RegisterType<FirstFrag> ( );
+			builder.RegisterType<ImageFragment> ( );
+			builder.RegisterType<SecondFrag> ( );
+			builder.RegisterType<TabFragment1> ( );
+			builder.RegisterType<TabFragment1ContextMenu> ( );
+			builder.RegisterType<TabFragment2> ( );
+			builder.RegisterType<ThirdFrag> ( );
 		}
 	}
 }

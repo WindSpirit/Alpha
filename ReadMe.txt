@@ -84,3 +84,9 @@ Autofac: IoC / DI (Inversion-of-Control / Dependency-Injections)
 	Alpha.Droid / Contracts / ITitleScraper.cs
 
 	Alpha.Droid / Setup.cs
+
+
+Android Notifications
+
+	Alpha.Droid / Activities / MainActivity.cs
+

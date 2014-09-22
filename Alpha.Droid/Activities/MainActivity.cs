@@ -7,7 +7,10 @@
 using System.Linq;
 using Alpha.Droid.Contracts;
 using Android.App;
+using Android.Content;
+using Android.Content.Res;
 using Android.OS;
+using Android.Support.V4.App;
 using Android.Views;
 
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
@@ -18,6 +21,7 @@ using Alpha.Droid.Compatibility;
 using Alpha.Droid.Fragments;
 using Alpha.Droid.Specifics;
 using Newtonsoft.Json;
+using TaskStackBuilder = Android.Support.V4.App.TaskStackBuilder;
 
 
 namespace Alpha.Droid.Activities
@@ -39,6 +43,13 @@ namespace Alpha.Droid.Activities
 		{
 			base.OnCreate ( bundle );
 			SetContentView ( Resource.Layout.Main );
+
+			if (Intent.Extras == null)
+				NotifyUser();
+			else if (! Intent.Extras.ContainsKey("key"))
+				NotifyUser();
+			else
+				;	// This activity is being called by the notification ;-)
 
 			if ( SupportActionBar != null ) {
 				SupportActionBar.SetDisplayHomeAsUpEnabled ( false );					// This is home and there is no up from here
@@ -119,6 +130,43 @@ namespace Alpha.Droid.Activities
 		{
 			MenuInflater.Inflate ( Resource.Menu.main_menu, menu );
 			return true;
+		}
+
+
+		public void NotifyUser()
+		{
+			//var nmgr = ( NotificationManager ) GetSystemService ( NotificationService );
+			//var notify = new Notification(Resource.Drawable.Icon, "You have a notification");
+			//// Need to learn more about Xamarin Intent creation
+			//var intent = new Intent();
+			//var pIntent = PendingIntent.GetActivity(this, 0, intent, 0);
+			//notify.SetLatestEventInfo(this, "Event Header", "Today is your meeting", pIntent);
+			//nmgr.Notify ( 0, notify );
+
+			var valuesForActivity = new Bundle();
+			valuesForActivity.PutString("key", "value");
+
+			var resultIntent = new Intent(this, typeof (MainActivity));
+			resultIntent.PutExtras(valuesForActivity);
+
+			var stackBuilder = TaskStackBuilder.Create ( this );
+			stackBuilder.AddParentStack( this );
+			stackBuilder.AddNextIntent ( resultIntent );
+
+			var resultPendingIntent = stackBuilder.GetPendingIntent(0, (int) PendingIntentFlags.UpdateCurrent);
+
+			var builder = new NotificationCompat
+				.Builder(this)
+				.SetAutoCancel ( true )						// dismiss the notification from the notification area when the user clicks on it.
+				.SetContentIntent ( resultPendingIntent )	// start up this activity when the user clicks the intent.
+				.SetContentTitle ( "Event Title/Header" )
+				.SetNumber(8)								// Lie, say there are 8 notifications ;-)
+				.SetSmallIcon ( Resource.Drawable.Icon )
+				.SetContentText("Today is your meeting!")
+				.SetTicker("You have a notification");
+
+			var nmgr = ( NotificationManager ) GetSystemService ( NotificationService );
+			nmgr.Notify(0, builder.Build());
 		}
 	}
 }
