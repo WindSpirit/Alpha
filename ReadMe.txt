@@ -90,3 +90,13 @@ Android Notifications
 
 	Alpha.Droid / Activities / MainActivity.cs
 
+
+Example of an Android Dialog
+
+	Alpha.Core / ViewModels / LoginDialogViewModel.cs
+	Alpha.Droid / Fragments / LoginDialogFragment.cs
+	Alpha.Droid / Resources / Layout / fragment_LoginDialog.axml
+
+	Alpha.Core / ViewModels / TabFrag1ViewModel.cs
+	Alpha.Droid / Fragments / TabFragment1.cs
+	Alpha.Droid / Resources / Layout / TabFrag1.axml

@@ -110,6 +110,7 @@
     <Compile Include="Contracts\MainActivityBag.cs" />
     <Compile Include="Controls\EllipsizingTextView.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Fragments\LoginDialogFragment.cs" />
     <Compile Include="Fragments\ImageFragment.cs" />
     <Compile Include="Fragments\TabFragment1ContextMenu.cs" />
     <Compile Include="Fragments\ThirdFrag.cs" />
@@ -161,6 +162,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_context_menu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_LoginDialog.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

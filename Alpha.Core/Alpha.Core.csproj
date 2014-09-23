@@ -51,6 +51,7 @@
     <Compile Include="ViewModels\ArrayListViewModel.cs" />
     <Compile Include="ViewModels\FragmentStatePagerViewModel.cs" />
     <Compile Include="ViewModels\ImageViewModel.cs" />
+    <Compile Include="ViewModels\LoginDialogViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\ThirdFragViewModel.cs" />
     <Compile Include="ViewModels\SecondFragViewModel.cs" />

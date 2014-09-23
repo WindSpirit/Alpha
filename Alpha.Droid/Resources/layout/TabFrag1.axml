@@ -29,6 +29,12 @@
         android:layout_height="wrap_content"
         android:text="IoC DI - Get Title"
         local:MvxBind="Click OnRetrieveTitle" />
+    <Button
+        android:id="@+id/showDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show dialogue"
+        local:MvxBind="Click OnShowDialog" />
     <FrameLayout
         android:id="@+id/tab1ContextMenu"
         android:layout_width="fill_parent"

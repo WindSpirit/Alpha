@@ -21,6 +21,8 @@ using Cirrious.MvvmCross.Binding.Droid.BindingContext;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 
 using Alpha.Core.ViewModels;
+using Cirrious.MvvmCross.ViewModels;
+using Cirrious.MvvmCross.Views;
 
 
 namespace Alpha.Droid.Fragments
@@ -46,8 +48,19 @@ namespace Alpha.Droid.Fragments
 			// Call the base method
 			base.OnCreateView ( inflater, container, savedInstanceState );
 
+			// Bind View get/set property to an Android activity method
+			((TabFrag1ViewModel) ViewModel).OnShowDialog = new MvxCommand ( OnShowDialog );
+
 			// ActionBar Tab Fragment: MvvmCross binding, during the Inflate process
 			return this.BindingInflate ( Resource.Layout.TabFrag1, null );
+		}
+
+
+		private void OnShowDialog()
+		{
+			// Display of a dialog is platform specific
+			var dialog = new LoginDialogFragment ( ) { ViewModel = new LoginDialogViewModel() };
+			dialog.Show( FragmentManager, "Login" );
 		}
 
 

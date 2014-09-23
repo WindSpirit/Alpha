@@ -41,6 +41,8 @@ namespace Alpha.Core.ViewModels
 			Debug.WriteLine(title);
 		}
 
+		public IMvxCommand OnShowDialog { get; set; }
+
 		private string _hello = "Tab (fragment) one.";
 		public string Hello {
 			get { return _hello; }

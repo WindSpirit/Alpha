@@ -5,5 +5,8 @@
 	
 	<string name="fragment_context_menu_msg">Fragment populating a context menu; long press the button to see.</string>
 	<string name="long_press">Long press me</string>
+
+	<string name="username">User ID</string>
+	<string name="password">Password</string>
 </resources>
 
