@@ -1,7 +1,7 @@
 
-=====================================================================================================================
-This solution illustrates many fundamental Android / Xamarin / MvvmCross design principles.
-=====================================================================================================================
+===============================================================================
+Solution implements fundamental Android/Xamarin/MvvmCross design principles.
+===============================================================================
 
 
 The introduction of MvxActionBarActivity class which makes Support v4 & v7 available (e.g.: ActionBar & Fragments).
@@ -54,7 +54,9 @@ Custom (Android) Presenter
 	Alpha.Droid / Contracts / ICustomPresenter.cs
 
 
-Fragment Menu Support
+Fragment Context Menu Support (and Context-Action-Bar)
+
+	Alpha.Droid / Fragments / TabFragment1ContextMenu.cs
 
 	Alpha.Droid / Fragments / TabFragment1.cs
 
@@ -100,3 +102,4 @@ Example of an Android Dialog
 	Alpha.Core / ViewModels / TabFrag1ViewModel.cs
 	Alpha.Droid / Fragments / TabFragment1.cs
 	Alpha.Droid / Resources / Layout / TabFrag1.axml
+

@@ -22,7 +22,6 @@ using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 
 using Alpha.Core.ViewModels;
 using Cirrious.MvvmCross.ViewModels;
-using Cirrious.MvvmCross.Views;
 
 
 namespace Alpha.Droid.Fragments
@@ -36,6 +35,7 @@ namespace Alpha.Droid.Fragments
 			// Fragment Menu Support: Indicate fragment updates the option menu On Create
 			HasOptionsMenu = true;
 
+			// Replace FrameLayout with Fragment that has a context-menu
 			var content = new TabFragment1ContextMenu();
 			FragmentManager.BeginTransaction ( ).Add ( /* Android.Resource.Id.Content */ Resource.Id.tab1ContextMenu, content ).Commit ( );
 		}

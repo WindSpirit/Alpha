@@ -8,7 +8,6 @@ using System.Linq;
 using Alpha.Droid.Contracts;
 using Android.App;
 using Android.Content;
-using Android.Content.Res;
 using Android.OS;
 using Android.Support.V4.App;
 using Android.Views;
@@ -135,9 +134,9 @@ namespace Alpha.Droid.Activities
 
 		public void NotifyUser()
 		{
+			// // Depreciated way of showing an Android notification...
 			//var nmgr = ( NotificationManager ) GetSystemService ( NotificationService );
 			//var notify = new Notification(Resource.Drawable.Icon, "You have a notification");
-			//// Need to learn more about Xamarin Intent creation
 			//var intent = new Intent();
 			//var pIntent = PendingIntent.GetActivity(this, 0, intent, 0);
 			//notify.SetLatestEventInfo(this, "Event Header", "Today is your meeting", pIntent);
